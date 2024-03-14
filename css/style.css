@@ -250,13 +250,13 @@ div{
 
 
 .featured-articles img {
-    width: 350px; 
+    width: 250px; 
     height: auto; 
 }
 
 
 .articles-grid img {
-    width: 100px; 
+    width: 300px; 
     height: auto; 
   
 }
@@ -368,10 +368,73 @@ figcaption.larger-caption {
     }
 }
 
-
 .hero-image img {
     width: 100%; /* Säkerställer att bilden tar upp hela containerns bredd */
     height: auto; /* Bibehåller bildens proportioner */
     object-fit: cover; /* Täcker containern helt utan att förvränga bildens proportioner */
 }
 
+.article-banner {
+    overflow-x: auto; /* Gör att innehållet kan skrollas horisontellt */
+    white-space: nowrap; /* Hindrar artiklarna från att bryta nedåt */
+  }
+  
+  .article-scroll-container {
+    display: flex;
+    gap: 20px; /* Skapar utrymme mellan artiklar */
+  }
+  
+  .article-item {
+    display: inline-block;
+    width: 300px; /* Anpassa efter önskad bredd */
+    white-space: normal; /* Återställer normal textflöde inom artikeln */
+  }
+  
+  .article-item img {
+    width: 100%; /* Gör att bilderna fyller artiklarnas bredd */
+    height: auto; /* Bevarar bildernas proportioner */
+  }
+  
+  .article-item h3 {
+    margin: 10px 0; /* Lägger till marginal ovanför och under rubriken */
+  }
+  
+
+div { word-break: break-all; }
+
+img { max-width:100%; }
+
+a {
+	-webkit-transition: all 150ms ease;
+	-moz-transition: all 150ms ease;
+	-ms-transition: all 150ms ease;
+	-o-transition: all 150ms ease;
+	transition: all 150ms ease; 
+	}
+    a:hover {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+        filter: alpha(opacity=50); /* IE7 */
+        opacity: 0.6;
+        text-decoration: none;
+    }
+
+    .article-row {
+    display: flex;
+    justify-content: space-between; /* Detta separerar artiklarna jämnt på raden. Du kan använda 'space-around' för jämn utrymme runt varje artikel */
+    align-items: flex-start; /* Detta ser till att artiklarna är toppjusterade */
+    flex-wrap: wrap; /* Detta tillåter artiklarna att omslutas till en ny rad om det inte finns tillräckligt med utrymme */
+}
+
+.article-row article {
+    flex-basis: 30%; /* Detta bestämmer den initiala bredden för varje artikel. Justera detta värde efter dina behov och utrymme */
+    margin-bottom: 20px; /* Lägger till utrymme mellan rader när de omsluts */
+}
+
+.article-row img {
+    width: 100%; /* Gör bilderna responsiva inom varje artikel */
+    height: auto; /* Behåller bildernas proportioner */
+}
+
+.figure, .figcaption {
+    text-align: center; /* Centrerar texten under bilden om du önskar */
+}
