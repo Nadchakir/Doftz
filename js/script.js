@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     const menuItems = [
-        { name: "Startsida", link: "/index.html" },
-        { name: "Parfymhistoria", link: "/parfymhistoria.html" },
-        { name: "Parfymguide", link: "/parfymguide.html" },
-        { name: "Media", link: "/media.html" }
+        { name: "Startsida", link: "index.html" },
+        { name: "Parfymhistoria", link: "parfymhistoria.html" },
+        { name: "Parfymguide", link: "parfymguide.html" },
+        { name: "Media", link: "media.html" }
     ];
     
     
@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
         topNav.appendChild(menu);
     }
 
-   
     const searchForm = document.createElement('form');
     searchForm.className = 'search-form';
 
