@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     const menuItems = [
-        { name: "Startsida", link: "/index.html" },
+        { name: "Startsida", link: "index.html" },
         { name: "Parfymhistoria", link: "parfymhistoria.html" },
         { name: "Parfymguide", link: "parfymguide.html" },
         { name: "Myter och fakta", link: "myterochfakta.html" }
@@ -58,10 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Array med menyobjekt
     const menuItems = [
-        { name: "Startsida", link: "/index.html" },
-        { name: "Parfymhistoria", link: "/parfymhistoria.html" },
-        { name: "Parfymguide", link: "/parfymguide.html" },
-        { name: "Myter och fakta", link: "/myterochfakta.html" }
+        { name: "Startsida", link: "index.html" },
+        { name: "Parfymhistoria", link: "parfymhistoria.html" },
+        { name: "Parfymguide", link: "parfymguide.html" },
+        { name: "Myter och fakta", link: "myterochfakta.html" }
     ];
     
     // Skapa en ny ul-lista för footermenyn

@@ -167,8 +167,6 @@ nav ul li a.active {
     color: white;
 }
 
-
-
 section {
     background-color: white;
     margin-bottom: 20px;
@@ -209,7 +207,6 @@ footer {
     margin: 5px 0 0 0; /* Justerar marginal för att placera texten nära under bilden */
     font-size: 14px; /* Justerar storleken på texten, ändra efter behov */
 }
-
 
 .footer-menu {
     list-style-type: none; 
@@ -269,9 +266,6 @@ footer .copyright {
     text-align: left;
     z-index: 20; /* Lägg till ett högre z-index-värde */
 }
-
-
-
 
 div {
     display: block
