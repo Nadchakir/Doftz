@@ -1,77 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6LY5FQR2HF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-6LY5FQR2HF');
+    </script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6LY5FQR2HF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6LY5FQR2HF');
-</script>
-
-
-<meta name="description" content="Doftz är en enkel parfymguide-sida">
-<meta name="keywords" content="parfym, doft, parfymer,dofter, parfymguide, parfymkategorierna">
-<meta name="author" content="Doftz parfymguide">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Parfymguide</title>
-<link rel="stylesheet" href="css/style.css">
-
-
+    <meta name="description" content="Doftz är en enkel parfymguide-sida">
+    <meta name="keywords" content="parfym, doft, parfymer, dofter, parfymguide, parfymkategorierna">
+    <meta name="author" content="Doftz parfymguide">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parfymguide</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    
 <body onload="buildmenu()">
-
     <header class="pageheader">
         <nav class="top-nav">
             <div class="logo">
-            <img src="images/logo..png" alt="Logotyp">
-        </div>
+                <button id="header-logo-link">
+                    <img src="images/logo..png" alt="Logotyp" class="header-logo-img">
+                </button>
+            </div>
         </nav>
     </header>
 
-    <img src="images/woman.perfume.jpg" class="full-width-background">
-
-
-            </section>
-
-
-        <main class="main-content">
-            <section class="featured-content">
-                <h2>Eau de Parfum vs Eau de Toilette</h2>
-                <p>Upptäck skillnaderna och hitta rätt doft för varje tillfälle.</p>
-            </section>
-
-            <section>
-                <h3>Eau de Parfum (EdP)</h3>
-                <p>Eau de Parfum har en högre koncentration av doftoljor, typiskt mellan 15% och 20%, vilket gör den rikare och mer långvarig än Eau de Toilette. Perfekt för kvällsbruk eller när du vill att din doft ska stanna längre.</p>
-            </section>
-
-            <section>
-                <h3>Eau de Toilette (EdT)</h3>
-                <p>Eau de Toilette är lättare än Eau de Parfum, med en doftoljekoncentration mellan 5% och 15%. Det är ett utmärkt val för daglig användning, erbjuder en friskhet som passar för arbetsdagen eller informella möten.</p>
-            </section>
-        </main>
-
-       
+    <div class="image-container">
+        <img src="images/essence.jpg" class="full-width-background" alt="Essence of perfumes">
+        <h1 class="text-over-image">Upptäck skillnaderna</h1>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Doftz. Alla rättigheter förbehållna.</p>
-    </footer>
-    <script src="js/script.js"></script>
+    <main class="main-content">
+        <h2>Vad är egentligen skillnaden mellan Eau de Parfum och Eau de Toilette?</h2>
 
+        <article class="article-container">
+            <img src="images/fragrance.jpg" alt="Eau de Parfum" class="article-image">
+            <div class="article-content">
+            <h3>Eau de Parfum (EdP)</h3>
+            <p>Eau de Parfum står ut med sin distinkta djuphet och varaktighet på huden. Denna parfymtyp har en
+                 doftkoncentration som ofta varierar mellan 15% och 20%, vilket ger den en intensitet som är både 
+                 omedelbar och varaktig. Eau de Parfum är idealisk för de som föredrar en parfym som stannar kvar,
+                  utan att bli överväldigande. Dess rika sammansättning gör att den kan utvecklas på huden under dagen,
+                   vilket avslöjar olika lager av doft allteftersom tiden går.</p>
+            <div class="button-container">
+                <button onclick="toggleContent('EdP-content')">Läs mer</button>
+            </div>
+            <div id="EdP-content" style="display:none;">
+                <div class="article-content">
+                <p>För dem som söker en långvarig doftupplevelse utan att den blir för överväldigande, står Eau de Parfum ut
+                     som ett idealiskt val. Denna balans mellan intensitet och subtilitet är vad som gör EdP till en omtyckt
+                      favorit bland parfymälskare. Dess förmåga att erbjuda en varaktighet som överträffar de flesta andra 
+                      dofttyper innebär att Eau de Parfum bibehåller sin fascinerande doftsignatur och komplexitet länge efter
+                       första appliceringen. <br> <br> Användaren kan njuta av en rik och mångsidig doftupplevelse som gradvis avslöjar
+                        sina olika doftlager och nyanser genom dagen. Det är denna unika kombination av varaktighet och utveckling 
+                        som skapar en personlig och minnesvärd aura runt bäraren. Vidare understryker EdP:s subtila övergångar
+                         mellan olika doftnoter dess sofistik och elegans, vilket gör den till det perfekta valet för såväl
+                          dagliga äventyr som speciella tillfällen. Med en sådan varaktighet och djup kan du känna dig trygg 
+                          och väldoftande, från dagens start till dess slut, med en känsla av nyfunnen självsäkerhet och poise.</p>
+                      
+            </div>
+        </article>
+
+        <article class="article-container">
+            <img src="images/parfym.hav.jpg" alt="Eau de Toilette" class="article-image">
+            <div class="article-content">
+            <h3>Eau de Toilette (EdT)</h3>
+            <p>Eau de Toilette är känd för sin lättare och mer upplyftande karaktär, vilket gör den till en favorit för dagligt bruk.
+                 Med en doftkoncentration på 5% till 15%, erbjuder den en fräschör som passar väl under arbetsdagen eller vid
+                  mindre formella sammanhang.</p>
+            <div class="button-container">
+                <button onclick="toggleContent('EdT-content')">Läs mer</button>
+            </div>
+            <div id="EdT-content" style="display:none;">
+                <div class="article-content">
+                <p>Den är särskilt anpassad för att användas generöst över hela kroppen, tillhandahållande en luftig
+                     och uppfriskande känsla som varar. Detta bidrar inte bara till att upprätthålla en känsla av fräschhet
+                      under hela dagen, utan det förbättrar också det allmänna välbefinnandet och självförtroendet. 
+                      Dess anpassningsbara natur gör att den kan appliceras efter morgonduschen för en fräsch start på dagen, 
+                      eller som en snabb uppfräschning under eftermiddagens slappare timmar. <br> <br>
+
+                    Vidare, tack vare dess subtila intensitet, kan Eau de Toilette tjäna som en diskret men elegant
+                     doftbakgrund som kompletterar snarare än konkurrerar med din naturliga doft. Denna egenskap gör den
+                      idealisk för sociala tillställningar, arbetsplatsen, och till och med fysisk aktivitet, där
+                       en överväldigande doft kan vara opassande. <br> <br>
+                    
+                    Sammantaget erbjuder Eau de Toilette en balanserad och mångsidig doftlösning som passar ett brett
+                     spektrum av preferenser och tillfällen, vilket gör den till en ovärderlig del av den personliga groomingrutinen.
+                      Dess förmåga att hålla dig doftande fräsch och lätt utan att vara överväldigande är vad som fortsätter 
+                      att definiera den som en stapelvara inom doftvärlden.
+        
+                    
+                    </p>
+            </div>
+        </article>
+
+        <article class="article-container">
+            <img src="images/doft.jpg" alt="Eau de Cologne" class="article-image">
+            <div class="article-content">
+            <h3>Eau de Cologne (EdC)</h3>
+            <p>
+                Eau de Cologne är distinkt för sin exceptionellt lätta doftprofil, vilket gör den till ett utmärkt val
+                 för dem som föredrar subtilitet över intensitet i sina doftval. Med en doftkoncentration som typiskt 
+                 varierar mellan 2% och 5%, erbjuder den en finstämd, men ändå märkbar doftupplevelse. Denna nedtonade 
+                 form av parfym är idealisk för dagligt bruk, tack vare sin diskreta och luftiga närvaro som inte överväldigar 
+                 sinnena, utan snarare kompletterar den naturliga hudaromen med en fräsch och ren underton.</p>
+            <div class="button-container">
+                <button onclick="toggleContent('EdC-content')">Läs mer</button>
+            </div>
+            <div id="EdC-content" style="display:none;">
+                <div class="article-content">
+                <p>Eau de Cologne har länge uppskattats för sin friska och uppfriskande kvalitet. Dess lättare natur gör den till
+                     en perfekt doft att applicera generöst, vilket ger en omedelbar känsla av uppfriskning. Denna typ av doft är
+                      särskilt populär under de varmare månaderna, när en tyngre parfym kan kännas för överväldigande. Den är också
+                       väl lämpad för aktiviteter som kräver en fräsch doft utan att dra till sig för mycket uppmärksamhet, 
+                       såsom affärsmöten eller luncher. <br> <br>
+
+                    Traditionellt har Eau de Cologne använts som en morgonritual, där den spritsas över huden för att väcka 
+                    sinnena och ge en kickstart på dagen. Dess rena och klara noter är tänkta att ge en känsla av vitalitet 
+                    och renhet, vilket gör den perfekt att applicera direkt efter en dusch. Detta är inte bara ett sätt att 
+                    dofta gott, utan också ett sätt att känna sig förnyad och redo att möta dagens utmaningar. <br> <br>
+                    
+                    Eau de Cologne är också ett utmärkt val för dem som föredrar en mycket diskret doft. På grund av sin låga
+                     koncentration av doftoljor är den mindre påträngande än andra parfymer, vilket gör den till en favorit bland
+                      dem som söker en mild, men ändå angenäm doft. Det är en mångsidig doft som kan användas i olika sammanhang, 
+                      från den avslappnade hemmamiljön till mer formella inställningar, utan att någonsin kännas malplacerad.
+                      <br> <br>
+                    
+                    Sammanfattningsvis är Eau de Cologne den perfekta doften för den som söker enkelhet och elegans. Dess förmåga
+                     att ge en lätt och uppfriskande doftupplevelse gör den till ett oumbärligt verktyg i den personliga 
+                     hygienrutinen. Oavsett om det är för en fräsch start på morgonen eller som en mild doft för en avslappnad
+                      eftermiddag, fortsätter Eau de Cologne att vara en tidlös klassiker inom doftens värld.
+                    
+                    
+                    .</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+          <a href="#" id="footer-logo-link">
+            <img src="images/logo..png" alt="Doftz Logotyp" class="footer-logo-img">
+          </a>
+        </div>
+      
+        <div class="footer-content">
+          <!-- Din befintliga footer-innehåll här -->
+          <ul class="footer-menu">
+            <!-- Dina länkar här -->
+          </ul>
+        </div>
+      
+        <p class="copyright"> &copy; 2024 Doftz. Alla rättigheter förbehållna.</p>
+      </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
